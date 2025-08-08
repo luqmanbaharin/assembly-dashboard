@@ -1,15 +1,41 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta http-equiv="refresh" content="180"> <!-- Refresh every 30 seconds -->
-    <style>
-        body { margin: 0; overflow: hidden; background-color: black; }
-        iframe { width: 100vw; height: 100vh; border: none; }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dashboard</title>
+  <style>
+    html, body {
+      margin: 0;
+      padding: 0;
+      background: #000;
+      overflow: hidden;
+    }
+
+    .iframe-container {
+      position: relative;
+      width: 100vw;
+      height: 100vh;
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      transform: scale(1);
+      transform-origin: top left;
+    }
+  </style>
 </head>
 <body>
-    <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQjlgoLT6Oe2p3NRWEdjYjgTDj7ga-JebH02GOytiCfE-pcMz9HK9hsBuQNE7_UJDZ5DFmsU-FyuByh/pubhtml?gid=16332797&single=true"></iframe>
-
+  <div class="iframe-container">
+    <iframe 
+      src="https://docs.google.com/spreadsheets/d/e/2PACX-1vQjlgoLT6Oe2p3NRWEdjYjgTDj7ga-JebH02GOytiCfE-pcMz9HK9hsBuQNE7_UJDZ5DFmsU-FyuByh/pubhtml?gid=16332797&single=true"
+      allowfullscreen>
+    </iframe>
+  </div>
 </body>
 </html>
-
