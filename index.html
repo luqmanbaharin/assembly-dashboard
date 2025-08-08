@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="refresh" content="30">
   <title>Assembly Dashboard</title>
   <style>
     html, body {
@@ -14,24 +15,18 @@
     }
 
     .container {
-      transform: scale(0.85); /* Adjust this value as needed */
+      transform: scale(0.85);
       transform-origin: top left;
       width: 100%;
       height: 100%;
     }
 
     iframe {
-      width: 1920px; /* Keep original full width */
-      height: 1080px; /* Keep original full height */
+      width: 1920px;
+      height: 1080px;
       border: none;
     }
   </style>
-  <script>
-    // Auto-refresh every 5 minutes (300,000 milliseconds)
-    setTimeout(() => {
-      location.reload();
-    }, 60000);
-  </script>
 </head>
 <body>
   <div class="container">
@@ -39,3 +34,4 @@
   </div>
 </body>
 </html>
+
